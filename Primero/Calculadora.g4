@@ -1,20 +1,15 @@
-grammar Calculadora;
 
-programa:   instruccion+ ;
-instruccion:   expresion NUEVA_LINEA      # imprimirExpr
-    |   NUEVA_LINEA                       # vacio
+grammar Expr;
+
+prog: expr EOF ;
+
+expr
+    : <assoc=right> expr '^' expr        # Pow
+    | expr op=('*'|'/') expr             # MulDiv
+    | expr op=('+'|'-') expr             # AddSub
+    | INT                                # Int
+    | '(' expr ')'                       # Parens
     ;
 
-expresion
-    : <assoc=right> expresion '^' expresion   # PotenciaDerecha
-    | expresion ('*'|'/') expresion           # MultiplicacionDivision
-    | expresion ('+'|'-') expresion           # SumaResta
-    | '-' expresion                           # Negativo
-    | ENTERO                                  # Numero
-    | '(' expresion ')'                       # Parentesis
-    ;
-
-NUEVA_LINEA: [\r\n]+ ;
-ENTERO:    [0-9]+ ;
-ESPACIO:   [ \t]+ -> skip ;
-
+INT : [0-9]+ ;
+WS  : [ \t\r\n]+ -> skip ;
