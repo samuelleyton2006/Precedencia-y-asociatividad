@@ -1,0 +1,9 @@
+# Cadenas de prueba para comparar precedencia y asociatividad
+# Formato: expresion   # Original=...,  Modificado=...
+
+1+2*3     # Original=7   , Modificado=9
+10-5-2    # Original=3   , Modificado=7
+4/2+3     # Original=5   , Modificado=0.8
+2-3*4     # Original=-10 , Modificado=-4
+2^3^2     # Original=512 , Modificado=512
+(1+2)*3   # Original=9   , Modificado=9
