@@ -1,5 +1,4 @@
 
-```markdown
 # Calculadora ANTLR (Gramática Modificada)
 
 Este proyecto implementa una calculadora con ANTLR4 en Python3 utilizando la gramática **ExprModified.g4**, en la cual se cambió la **precedencia y asociatividad** de algunos operadores para observar diferencias.
