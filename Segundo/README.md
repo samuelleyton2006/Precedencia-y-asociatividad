@@ -20,4 +20,9 @@ Ejemplos:
 ## 🚀 Cómo usar
 1. Instalar ANTLR y el runtime para Python:
    ```bash
-   pip install antlr4-tools
+  1+2*3     # Modificado=9
+   10-5-2    # Modificado=7
+   4/2+3     # Modificado=0.8
+   2-3*4     # Modificado=-4
+   2^3^2     # Modificado=512
+   (1+2)*3   # Modificado=9
