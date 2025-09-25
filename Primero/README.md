@@ -16,7 +16,12 @@ Ejemplos:
 
 ---
 
-## 🚀 Cómo usar
-1. Instalar ANTLR y el runtime para Python:
+## 🚀 cadena de entrada
+1. Contenido de prueba y resultado esperado 
    ```bash
-   pip install antlr4-tools
+   1+2*3     # Original=7
+   10-5-2    # Original=3
+   4/2+3     # Original=5
+   2-3*4     # Original=-10
+   2^3^2     # Original=512
+   (1+2)*3   # Original=9
