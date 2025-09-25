@@ -17,10 +17,10 @@ Ejemplos:
 
 ---
 
-## 🚀 Cómo usar
-1. Instalar ANTLR y el runtime para Python:
+## 🚀 Resultados
+1. Resultados esperados para la gramatica modificada
    ```bash
-  1+2*3     # Modificado=9
+   1+2*3     # Modificado=9
    10-5-2    # Modificado=7
    4/2+3     # Modificado=0.8
    2-3*4     # Modificado=-4
